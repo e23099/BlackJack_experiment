@@ -52,4 +52,4 @@ to make a decision like "more card" or "stop" in some situation, while being tot
 of total points at hand, and making some assumption, we can conclude the possible options for each possible situation. And hence randomly
 choosing from these options forms the strategy.
 
-When choosing hesitation range of total points as 14~17, the options are as follow:
+When choosing hesitation range of total points as 14~17, the options can be summary into the xlsx file *Random Strategy.xlsx*
