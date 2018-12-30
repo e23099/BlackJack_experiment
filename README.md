@@ -3,7 +3,7 @@ A simulation of playing BlackJack with different strategies
 
 ## What is Black Jack?
 
-Black Jack is a poker game in which the player plays against the dealer only. It's popular among casinos around the world, yet the it's rule differs in places.
+Black Jack is a poker game in which the player plays against the dealer only. It's popular among casinos around the world, yet it's rule differs in places.
 In our simulation, we only consider some common rules found online, and they're mainly based on the website https://www.blackjackinfo.com/.
 
 In short, rules of black jack game can be devided into three parts: the card, the dealer and the player.
