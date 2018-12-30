@@ -32,7 +32,7 @@ By first choice, we mean the first choice after you received the first two cards
 ## What is this experiment about?
 
 Inspired by the movie *21*, we want to find out if there is a optimal playing strategy for black jack game. 
-Assuming that the player doesn't have to remember the cards, we come up with 3 strategies to play against the dealer.
+Assuming that the player doesn't have to memorize the dealt cards, we come up with 3 strategies to play against the dealer.
 Given the initial capital for the gambling, and the rounds being played for each strategies,
 we want to know at the end, which strategy will stand out from the rest, and on what kind of conditions(like how much to bet?) will the player most
 possibliy keep the money.
