@@ -51,5 +51,10 @@ For comparison, we come up with the idea of randomly choosing the options while 
 to make a decision like "more card" or "stop" in some situation, while being totally confused in the other. By defining a "hesitation range"
 of total points at hand, and making some assumption, we can conclude the possible options for each possible situation. And hence randomly
 choosing from these options forms the strategy.
-
 When choosing hesitation range of total points as 14~17, the options can be summary into the xlsx file *Random Strategy.xlsx*
+
+As for the factor of the experiment, we consider 2 of them:
+* bet/initial-capital ratio
+* number of decks the dealer has
+
+Since gambling is a matter of chance, we believe that managing the capital by taking care of the amount of each bet is crucial to the result. In addition, the more decks the dealer has in dealing the cards, the less likly will the player to calculate the probability behands. Thus it may be true that the outcome may be affect by this factor as well.
