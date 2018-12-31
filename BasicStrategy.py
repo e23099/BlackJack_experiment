@@ -56,9 +56,9 @@ class BasicStrategy():
             '6': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '7': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '8': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            '9': {'2': 1, '3': 2, '4': 2, '5': 2, '6': 2, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            '10': {'2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, 'T': 1, 'A': 1},
-            '11': {'2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, 'T': 1, 'A': 1},
+            '9': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            '10': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            '11': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '12': {'2': 1, '3': 1, '4': 3, '5': 3, '6': 3, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '13': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '14': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
@@ -67,11 +67,11 @@ class BasicStrategy():
             '17': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3, 'T': 3, 'A': 3},
             '18': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3, 'T': 3, 'A': 3},
             # Soft hand
-            'A2': {'2': 1, '3': 1, '4': 1, '5': 2, '6': 2, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            'A3': {'2': 1, '3': 1, '4': 1, '5': 2, '6': 2, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            'A4': {'2': 1, '3': 1, '4': 2, '5': 2, '6': 2, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            'A5': {'2': 1, '3': 1, '4': 2, '5': 2, '6': 2, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            'A6': {'2': 1, '3': 2, '4': 2, '5': 2, '6': 2, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            'A2': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            'A3': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            'A4': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            'A5': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            'A6': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             'A7': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 1, 'T': 1, 'A': 1},
             'A8': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3, 'T': 3, 'A': 3},
             'A9': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3, 'T': 3, 'A': 3},
@@ -79,7 +79,7 @@ class BasicStrategy():
             '22': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '33': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '44': {'2': 1, '3': 1, '4': 1, '5': 4, '6': 4, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            '55': {'2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, 'T': 1, 'A': 1},
+            '55': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '66': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '77': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '88': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 4, '9': 4, 'T': 1, 'A': 1},
@@ -147,15 +147,16 @@ class BasicStrategy():
 
         elif option == 6: # split more
             print("(split) more")
-            game.splitMoreCard()
+            return game.splitMoreCard()
 
         elif option == 7: # split double
             print("(split) double")
-            game.splitDoubleMore()
+            return game.splitDoubleMore()
 
         elif option == 8: # split stop
             print("(split) stop")
             self.game.doneSplitHand = True
+            return True
         else:
             return False
 
@@ -176,13 +177,13 @@ class BasicStrategy():
             if not self.game.doneSplitHand:
                 splitHand = self.deriveHand(game.splitPlayer)
                 splitChoice = self.coach(splitHand, False)
-                self.doCoach(splitChoice+5, game) # small trick: +5 indicates split choices
-
-            choice = self.coach(hand, False)
+                return self.doCoach(splitChoice+5, game) # small trick: +5 indicates split choices
+            else:
+                choice = self.coach(hand, False)
+                return self.doCoach(choice, game)
+        else:
+            choice = self.coach(hand, isFirstChoice)
             return self.doCoach(choice, game)
-
-        choice = self.coach(hand, isFirstChoice)
-        return self.doCoach(choice, game)
 
     def play(self, showGame = False):
         while self.player.round < self.nRound or self.game.playing:
@@ -203,7 +204,7 @@ class BasicStrategy():
                     self.game.print(result=True)
 
             if self.pauseEachRound:
-                input("Press any key to continue...")
+                input("Press ENTER to continue...")
         self.endPlay()
 
     def endPlay(self):
@@ -212,7 +213,7 @@ class BasicStrategy():
 
 ################
 import numpy.random as rn
-test = BasicStrategy(5000,0.02,1000,pause=False)
-rn.seed(121)
+test = BasicStrategy(5000,0.02,1000,pause=True)
+rn.seed(17)
 test.play(showGame=True)
 ################

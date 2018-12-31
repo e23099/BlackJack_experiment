@@ -111,15 +111,16 @@ class RandomStrategy():
 
         elif option == 6: # split more
             print("(split) more")
-            game.splitMoreCard()
+            return game.splitMoreCard()
 
         elif option == 7: # split double
             print("(split) double")
-            game.splitDoubleMore()
+            return game.splitDoubleMore()
 
         elif option == 8: # split stop
             print("(split) stop")
             self.game.doneSplitHand = True
+            return True
         else:
             return False
 
@@ -141,12 +142,12 @@ class RandomStrategy():
                 splitHand = self.deriveHand(game.splitPlayer)
                 splitChoice = self.coach(splitHand, False)
                 self.doCoach(splitChoice+5, game) # small trick: +5 indicates split choices
-
-            choice = self.coach(hand, False)
+            else:
+                choice = self.coach(hand, False)
+                return self.doCoach(choice, game)
+        else:
+            choice = self.coach(hand, isFirstChoice)
             return self.doCoach(choice, game)
-
-        choice = self.coach(hand, isFirstChoice)
-        return self.doCoach(choice, game)
 
     def play(self, showGame = False):
         while self.player.round < self.nRound or self.game.playing:
