@@ -75,17 +75,17 @@ class BasicStrategy():
             'A7': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 1, 'T': 1, 'A': 1},
             'A8': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3, 'T': 3, 'A': 3},
             'A9': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3, 'T': 3, 'A': 3},
-            # Pairs
-            '22': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            '33': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            '44': {'2': 1, '3': 1, '4': 1, '5': 4, '6': 4, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            # Pairs  NOTE: second choice for Pairs are all as Hard hands
+            '22': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            '33': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            '44': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
             '55': {'2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            '66': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            '77': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 1, '9': 1, 'T': 1, 'A': 1},
-            '88': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 4, '9': 4, 'T': 1, 'A': 1},
-            '99': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 3, '8': 4, '9': 4, 'T': 3, 'A': 3},
+            '66': {'2': 1, '3': 1, '4': 3, '5': 3, '6': 3, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            '77': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            '88': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
+            '99': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3, 'T': 3, 'A': 3},
             'TT': {'2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3, 'T': 3, 'A': 3},
-            'AA': {'2': 4, '3': 4, '4': 4, '5': 4, '6': 4, '7': 4, '8': 4, '9': 4, 'T': 4, 'A': 1},
+            'AA': {'2': 1, '3': 1, '4': 3, '5': 3, '6': 3, '7': 1, '8': 1, '9': 1, 'T': 1, 'A': 1},
         }
 
     def deriveHand(self, player: BJPlayer):
@@ -126,35 +126,35 @@ class BasicStrategy():
 
     def doCoach(self, option, game: BJGameMove):
         if option == 1: # more card
-            print("more")
+            # print("more")
             return game.moreCard()
 
         elif option == 2: # double more
-            print("double")
+            # print("double")
             return game.doubleMore()
 
         elif option == 3: # stop
-            print("stop")
+            # print("stop")
             return game.stop()
 
         elif option == 4: # split
-            print("split")
+            # print("split")
             return game.split()
 
         elif option == 5: # give up
-            print("give up")
+            # print("give up")
             return game.giveUp()
 
         elif option == 6: # split more
-            print("(split) more")
+            # print("(split) more")
             return game.splitMoreCard()
 
         elif option == 7: # split double
-            print("(split) double")
+            # print("(split) double")
             return game.splitDoubleMore()
 
         elif option == 8: # split stop
-            print("(split) stop")
+            # print("(split) stop")
             self.game.doneSplitHand = True
             return True
         else:
@@ -212,8 +212,8 @@ class BasicStrategy():
               self.player.round,"rounds.")
 
 ################
-import numpy.random as rn
-test = BasicStrategy(5000,0.02,1000,pause=True)
-rn.seed(17)
-test.play(showGame=True)
+# import numpy.random as rn
+# test = BasicStrategy(5000,0.02,1000,pause=True)
+# rn.seed(18)
+# test.play(showGame=True)
 ################
