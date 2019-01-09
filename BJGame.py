@@ -25,7 +25,7 @@ class BJGameMove():
         self.playing = False
         self.splitting = False
         self.doneSplitHand = False
-        print("Game Start")
+        # print("Game Start")
 
     def newGame(self, amt):
         if self.playing:

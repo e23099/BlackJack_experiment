@@ -45,6 +45,6 @@ class DealerStrategy():
               self.player.round,"rounds.")
 
 ###########
-test = DealerStrategy(5000, 0.02, 100, pause=False)
-rn.seed(121)
-test.play(showGame=True)
+# test = DealerStrategy(5000, 0.02, 100, pause=False)
+# rn.seed(121)
+# test.play(showGame=True)

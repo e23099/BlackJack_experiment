@@ -28,6 +28,7 @@ class BJDealer(BJPlayer):
     def shuffle(self):
         """shuffle all cards"""
         self.cardDealt = [False for i in range(52*self.nDeck)]
+        self.cardLeft = 52 * self.nDeck
 
     def shuffleIfNeeded(self):
         if self.cardLeft < MIN_CARD_LEFT * self.nDeck:

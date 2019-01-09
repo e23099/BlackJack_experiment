@@ -66,6 +66,8 @@ class RandomStrategy():
             if player.hand[0].face == player.hand[1].face and player.hand[0].face in [6, 7]:
                 if len(player.hand) == 2:
                     return '77' if player.hand[0].face == 6 else '88'
+                else:
+                    return str(player.total())
             # case3 : not 77 or 88 and no Ace in hand
             else:
                 return str(player.minPoint)
@@ -90,35 +92,35 @@ class RandomStrategy():
         else, return False
         """
         if option == 1: # more card
-            print("more")
+            # print("more")
             return game.moreCard()
 
         elif option == 2: # double more
-            print("double")
+            # print("double")
             return game.doubleMore()
 
         elif option == 3: # stop
-            print("stop")
+            # print("stop")
             return game.stop()
 
         elif option == 4: # split
-            print("split")
+            # print("split")
             return game.split()
 
         elif option == 5: # give up
-            print("give up")
+            # print("give up")
             return game.giveUp()
 
         elif option == 6: # split more
-            print("(split) more")
+            # print("(split) more")
             return game.splitMoreCard()
 
         elif option == 7: # split double
-            print("(split) double")
+            # print("(split) double")
             return game.splitDoubleMore()
 
         elif option == 8: # split stop
-            print("(split) stop")
+            # print("(split) stop")
             self.game.doneSplitHand = True
             return True
         else:
@@ -141,7 +143,7 @@ class RandomStrategy():
             if not self.game.doneSplitHand:
                 splitHand = self.deriveHand(game.splitPlayer)
                 splitChoice = self.coach(splitHand, False)
-                self.doCoach(splitChoice+5, game) # small trick: +5 indicates split choices
+                return self.doCoach(splitChoice+5, game) # small trick: +5 indicates split choices
             else:
                 choice = self.coach(hand, False)
                 return self.doCoach(choice, game)
